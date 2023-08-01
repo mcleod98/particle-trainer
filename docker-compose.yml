@@ -1,0 +1,10 @@
+version: '1'
+services:
+    torch:
+        image: particles_nn
+
+        ports:
+            - "8888:8888"
+        volumes:
+            - ./data:/opt/data
+            - ./src:/opt/src

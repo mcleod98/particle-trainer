@@ -1,0 +1,9 @@
+learning_rate: 0.001
+batch_size: 10
+epochs: 100
+loss_weights:
+- 1
+- 10
+- 10
+- 10
+- 10

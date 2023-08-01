@@ -1,0 +1,7 @@
+model_load: ''
+model_save: /opt/data/simpnet02.pts
+img_dir: /opt/data/images
+sqlite_path: /opt/data/particles.db
+db_type: SQLITE
+checkpoint_load: ''
+checkpoint_save: /opt/data/simpnetcheckpt.pt
