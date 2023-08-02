@@ -7,6 +7,10 @@ from utils import pad_collate, resume_checkpoint, save_checkpoint
 from loss import CustomLoss
 
 def train_net(model, trainset, valset, hyper, config):
+    '''
+    Train network on training and validation sets, with parameters from hyper and config
+    
+    '''
 
     trainloader = DataLoader(trainset, batch_size=hyper['batch_size'], shuffle=False, num_workers=0, collate_fn=pad_collate)
     valloader = DataLoader(valset, batch_size=hyper['batch_size'], shuffle=False, num_workers=0, collate_fn=pad_collate)
